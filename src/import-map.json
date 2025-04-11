@@ -1,8 +1,1 @@
-
-{
-    "imports": {
-      "cc": "./../cocos-js/cc.js",
-      "_virtual_cc": "./../cocos-js/_virtual_cc-4e1e3655.js"
-    }
-  }
-  
+{"imports":{"cc":"./../cocos-js/cc.js"}}
