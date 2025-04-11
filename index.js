@@ -18,7 +18,7 @@ System.register(["./application.js"], function (_export, _context) {
       canvas.width = bcr.width;
       canvas.height = bcr.height;
       application = new Application();
-      topLevelImport('cc').then(function (engine) {
+      topLevelImport('./cc').then(function (engine) {
         return application.init(engine);
       }).then(function () {
         return application.start();
