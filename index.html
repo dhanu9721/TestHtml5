@@ -42,6 +42,17 @@
         <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
       </div>
     </div>
+
+    <script>
+      document.addEventListener('touchstart', function() {
+          const canvas = document.getElementById('GameCanvas');
+          if (canvas && canvas.requestFullscreen) {
+              canvas.requestFullscreen();
+          } else if (canvas && canvas.webkitRequestFullScreen) {
+              canvas.webkitRequestFullScreen();
+          }
+      }, { once: true });
+      </script>
   
 <!-- Polyfills bundle. -->
 <script src="src/polyfills.bundle.js" charset="utf-8"> </script>
